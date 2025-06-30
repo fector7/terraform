@@ -51,7 +51,7 @@ provider "yandex" {
 }
 ```
 
-providers.tf
+variables.tf
 ```hcl
 variable "cloud_id" {
   description = "ID облака"
@@ -78,6 +78,7 @@ variable "vm_resources" {
     core_fraction = 20
   }
 }
+```
 
 network.tf
 ```hcl
