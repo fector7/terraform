@@ -1,0 +1,18 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+
+users:
+  - name: user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE+3JUVgdmLQ0i8WftYeJSjh31EsYUn1+mMqCp32qKwz fedor@fedor-Virtual-Machine
+
+packages:
+  - nginx
+
+runcmd:
+  - systemctl start nginx
+  - systemctl enable nginx
