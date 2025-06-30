@@ -216,9 +216,14 @@ runcmd:
   - systemctl enable nginx
 ```
 ![Alt text](img/terra1.PNG)
+
 ![Alt text](img/terra2.PNG)
+
 ![Alt text](img/terra3.PNG)
+
 ![Alt text](img/terra4.PNG)
+
 ![Alt text](img/terra5.PNG)
+
 ![Alt text](img/terra6.PNG)
 
